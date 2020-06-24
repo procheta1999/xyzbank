@@ -11,7 +11,7 @@ try:
         cursor=con.cursor()
         sql="insert into login(userid,password) values (%s,%s)"
         cursor.execute(sql,(ui,p))
-        print("<h1>successfully inserted</h1><a href='login.html'>back to login page</a>")
+        print("<h1>successfully inserted</h1><a href='index.html'>back to login page</a>")
     else:
          print("connection not established")
 except:
